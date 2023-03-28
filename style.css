@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+header{
+    width: 300px;
+    height: 300px;
+    border: 7px dashed goldenrod;
+    box-shadow: 0px 0px 15px 5px goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: rotateZ(180deg);
+    position: relative;
+}
+section{
+    width: 450px;
+    height: 450px;
+    border: 10px double purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 5px purple;
+    position: relative;
+    margin-top: 50px;
+    animation: section 5s linear infinite;
+}
+@keyframes section {
+    50%{
+        box-shadow: 0px 0px 50px 15px purple;
+    }
+}
+nav{
+    width: 350px;
+    height: 350px;
+    border: 1px solid darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 5px darkred;
+}
+.jam{
+    width: 0px;
+    height: 140px;
+    border: 2px solid green;
+    margin-top: 50px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    background: green;
+    transform-origin: top;
+    box-shadow: 0px 0px 15px 5px green;
+}
+.rope{
+    width: 0px;
+    height: 160px;
+    border: 2px solid yellow;
+    margin-top: 50px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    background: yellow;
+    transform-origin: top;
+    box-shadow: 0px 0px 15px 5px yellow;
+}
+.varkyan{
+    width: 0px;
+    height: 190px;
+    border: 2px solid blue;
+    margin-top: 50px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    background: blue;
+    transform-origin: top;
+    box-shadow: 0px 0px 15px 5px blue;
+}
+.item{
+    background: black;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: sans-serif;
+    font-size: 27px;
+    transform-origin: center;
+    transform: translate(-50%,-50%) rotateZ(calc(var(--i)*30deg));
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+p{
+    background: transparent;
+}
+.pa{
+    color: white;
+    transform: rotateZ(calc(var(--a)*90deg));
+}
+.pb{
+    color: white;
+    transform: rotateZ(calc(var(--b)*90deg));
+}
+.pc{
+    color: white;
+    transform: rotateZ(calc(var(--c)*90deg));
+}
+h2{
+    font-weight: 100;
+    font-size: 73px;
+    text-shadow: 0px 0px 5px rgb(179, 245, 243);
+    color: black;
+}
+.line{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: saddlebrown;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    box-shadow: 0px 0px 10px 1px coral;
+}
